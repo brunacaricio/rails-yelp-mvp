@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <h2>YELP - Create a new review!</h2>
+
+  <%=  render 'form', restaurant: @restaurant, review: @review %>
+
+  <div class="mt-4">
+    <p>
+      <%= link_to "⬅️ Go back to #{@restaurant.name}", restaurant_path(@restaurant.id), class: 'text-decoration-none' %>
+    </p>
+    <p>
+      <%= link_to '⬅️ Go back to all restaurants', restaurants_path, class: 'text-decoration-none' %>
+    </p>
+  </div>
+</div>
